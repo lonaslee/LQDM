@@ -7,6 +7,7 @@ Create a new conda environment, and install the dependencies:
 ```
 conda create -n lqdm
 conda activate lqdm
+conda install python pytorch torchvision -c pytorch -y
 python3 -m pip install -r requirements.txt
 ```
 
@@ -19,7 +20,7 @@ Download the data and model checkpoint from [here](https://drive.google.com/driv
 ### Training
 ```
 python3 main.py fit -c configs/lqds.yaml --trainer.devices 4 --data.batch_size 4 --data.path
-datasets/
+data/
 ```
 
 This will train the model from scratch using the dataset from the config. Replace with 
@@ -27,7 +28,7 @@ the number of GPUs and the batch size based on available memory.
 
 ### Validation
 ```
-python3 main.py validate -c configs/lqds.yaml --trainer.devices 1 --data.batch_size 4 --data.path datasets/ --model.ckpt_path checkpoints/model.ckpt
+python3 main.py validate -c configs/lqds.yaml --trainer.devices 1 --data.batch_size 4 --data.path data/ --model.ckpt_path checkpoints/model.ckpt
 ```
 
 This will evaluate metrics for a trained model checkpoint.

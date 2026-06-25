@@ -13,3 +13,4 @@ ipykernel
 fvcore
 torchmetrics
 pycocotools
+opencv-python
