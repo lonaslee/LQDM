@@ -1,0 +1,15 @@
+gitignore_parser
+jsonargparse[signatures]
+matplotlib
+timm
+wandb
+lightning
+transformers
+scipy
+numpy
+torch
+torchvision
+ipykernel
+fvcore
+torchmetrics
+pycocotools
