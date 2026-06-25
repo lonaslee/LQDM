@@ -8,19 +8,17 @@ title: ""
 
 # Learning to Segment Liquids in Real-world Images
 
-Jonas Li, Michelle Li, Luke Liu, Heng Fan
+Jonas Li, Michelle Li, Luke Liu, Xiaohui Yuan, Heng Fan
 
 ![Liquids](/liquid.png)
 
 #### Abstract
 ---
-Different types of liquids such as water, wine and medicine appear in all aspects of daily life. However, limited attention has been given to the task, hindering the ability of robots to avoid or interact with liquids safely. The segmentation of liquids is difficult because liquids come in diverse appearances and shapes; moreover, they can be both transparent or reflective, taking on arbitrary objects and scenes from the background or surroundings. To take on this challenge, we construct a large-scale dataset of liquids named LQDS consisting of 5000 real-world images annotated into 14 distinct classes, and design a novel liquid detection model named LQDM, which leverages cross-attention between a dedicated boundary branch and the main segmentation branch to enhance segmentation predictions. Extensive experiments demonstrate the effectiveness of LQDM on the test set of LQDS, outperforming state-of-the-art methods and establishing a strong baseline for the semantic segmentation of liquids.
+Liquids like water, wine and medicine are everywhere. However, limited attention has been given to the task of segmenting liquids, hindering the ability of robots to safely avoid and interact with them. The segmentation of liquids is difficult because liquids come in diverse appearances and shapes; moreover, they can be both transparent or reflective, taking on arbitrary objects and scenes from their background and surroundings. To take on this challenge, we construct a liquid dataset, LQDS, consisting of 5000 real-world images annotated into 14 distinct classes, and design a novel liquid detection model, LQDM, which leverages cross-attention between a dedicated boundary branch and the main segmentation branch to enhance mask predictions. Extensive experiments demonstrate the effectiveness of LQDM on the testing set of LQDS, outperforming state-of-the-art methods to establish a strong baseline for the semantic segmentation of liquids. We believe that LQDS and LQDM will facilitate future research in liquid segmentation and enable practical applications in robotics.
 
 [[Paper](https://arxiv.org/abs/2601.00940)]
-
-<!-- - [Code](https://github.com/lonaslee/LQDM) -->
-<!-- - [Benchmark](https://drive.google.com/drive/folders/1KIouI3V6XdIfXIgko9MYjBQfar183Wej?usp=sharing) -->
-<!-- - [Supplementary](supplementary.pdf) -->
+[[Benchmark](https://drive.google.com/drive/folders/1KIouI3V6XdIfXIgko9MYjBQfar183Wej?usp=sharing)]
+[[Code](https://github.com/lonaslee/LQDM)]
 
 #### Benchmark
 ---
@@ -29,8 +27,6 @@ Different types of liquids such as water, wine and medicine appear in all aspect
 LQDS contains 5K images of liquids, each with corresponding liquid masks. The liquid
 objects in the images are categorized into 14 classes: water, wine, juice, cocktails, 
 soda, coffee, tea, boba, chemical, medical, milk, spirits, honey, and miscellaneous.
-
-<!-- [[Download](https://lonaslee.github.io/LQDM)] -->
 
 #### Method
 ---
